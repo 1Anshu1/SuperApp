@@ -1,0 +1,59 @@
+.weather {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.weather-top {
+    background-color: var(--light-pink);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date {}
+
+.weather-bottom {
+    background-color: var(--dark-blue);
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px
+}
+
+.condition,
+.temp-pressure,
+.wind-humidity {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.temp-pressure {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0 10px;
+}
+
+.cloud {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.temp {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wind,
+.humidity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

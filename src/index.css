@@ -5,7 +5,12 @@
   --light-green: #72DB73;
   --white: #ffffff;
   --red: #ff0000;
-  --green: #148A08
+  --green: #148A08;
+  --purple: #5746EA;
+  --light-purple: #9F94FF;
+  --yellow: #F1C75B;
+  --light-pink: #FF4ADE;
+  --dark-blue: #101744;
 }
 
 * {

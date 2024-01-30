@@ -1,10 +1,8 @@
 import './App.css'
 
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Register from './pages/register/Register'
-import Info from './pages/info/Info'
 import Category from './pages/category/Category'
 import Movies from './pages/movies/Movies'
 import Showcase from './pages/showcase/Showcase'

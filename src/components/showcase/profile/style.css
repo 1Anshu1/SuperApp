@@ -1,0 +1,32 @@
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--purple);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.profile-right .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-right .username {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.profile-genre {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.profile-genre div {
+    background-color: var(--light-purple);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
