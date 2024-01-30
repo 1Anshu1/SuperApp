@@ -101,14 +101,14 @@ const RegisterForm = () => {
             return;
         } else {
             window.localStorage.setItem("user", JSON.stringify(user))
-            navigate('/info')
+            navigate('/category')
         }
     }
 
 
 
     return (
-        <div className='registerForm'>
+        <div className={'registerForm'}>
             <h1 className="title">Super App</h1>
             <div className="subtitle">Create your new account</div>
             <div className="input-section">
