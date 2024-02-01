@@ -19,7 +19,7 @@
 
 .box4 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
 }
@@ -41,4 +41,16 @@
 
 .wrapper>div {
     padding: 0.75rem;
+}
+
+.showcase-btn {
+    position: fixed;
+    background-color: var(--green);
+    color: white;
+    padding: 5px 20px;
+    right: 100px;
+    bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }

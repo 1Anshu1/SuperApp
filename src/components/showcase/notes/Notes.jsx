@@ -1,28 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './style.css'
 
 const Notes = () => {
-    const [notes, setNotes] = useState()
+    const [notes, setNotes] = useState(JSON.parse(localStorage.getItem('superAppNotes')))
 
     const handleChange = (e) => {
         setNotes(e.target.value)
-        localStorage.setItem('notes', JSON.stringify(notes))
+        localStorage.setItem('superAppNotes', JSON.stringify(e.target.value))
     }
 
-    useEffect(() => {
-        setNotes(JSON.parse(localStorage.getItem('notes')))
-    }, [])
     return (
-        <div>
+        <div className='textarea'>
+            <div>All Notes</div>
             <textarea
                 name=""
                 id=""
                 cols="30"
                 rows="10"
                 value={notes}
-                defaultValue='All Notes'
                 onChange={handleChange}>
-
             </textarea>
         </div >
     )

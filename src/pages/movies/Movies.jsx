@@ -1,11 +1,23 @@
-import React from 'react'
 import './style.css'
+
+import React from 'react'
+
+import Carausal from '../../components/movie/Carausal'
 
 const Movies = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <div>
+                <h1 className=''>Super App</h1>
+                <img src="" alt="" />
+            </div>
+            <div>
+                <div>
+                    Entertainment according to your choice
+                    <Carausal />
+                </div>
+            </div>
+        </>
     )
 }
 

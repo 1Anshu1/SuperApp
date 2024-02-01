@@ -1,6 +1,6 @@
 import './style.css'
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaCloud } from "react-icons/fa";
 import { WiBarometer, WiHumidity } from "react-icons/wi";
 import { FiWind } from "react-icons/fi";
@@ -13,7 +13,7 @@ const Weather = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Kolkata&appid=96bf79fd2820a7d19d0d03a69fddec08')
+            const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Kolkata&appid=${import.meta.env.VITE_WEATHER_KEY}`)
             const weatherData = await res.json()
             setData(weatherData)
         }
